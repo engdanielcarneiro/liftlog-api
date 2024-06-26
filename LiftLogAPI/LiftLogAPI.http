@@ -1,0 +1,23 @@
+@LiftLogAPI_HostAddress = https://localhost:7087
+
+GET {{LiftLogAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{LiftLogAPI_HostAddress}}/api/exercises
+Content-Type: application/json
+
+{
+  //Exercise
+}
+
+###
+
+GET {{LiftLogAPI_HostAddress}}/api/exercises/0
+
+###
+
+GET {{LiftLogAPI_HostAddress}}/api/exercises
+
+###
