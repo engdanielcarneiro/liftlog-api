@@ -7,6 +7,7 @@ namespace LiftLogAPI.Controllers
 {
     [Route("/api/[controller]s")]
     [ApiController]
+
     public class WeightLogController : Controller
     {
         private readonly DataContext _context;

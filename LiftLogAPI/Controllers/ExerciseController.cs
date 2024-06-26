@@ -1,5 +1,6 @@
 ﻿using LiftLogAPI.Data;
 using LiftLogAPI.Entities;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ namespace LiftLogAPI.Controllers
 {
     [Route("api/[controller]s")]
     [ApiController]
+    [EnableCors("LocalDevPolicy")]
     public class ExerciseController : Controller
     {
         private readonly DataContext _context;
